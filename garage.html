@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" href="nascar.css"></head>
+<head>
+    <link rel="stylesheet" href="nascar.css">
+    <title>Rocky Mountain Series Drivers | NASCAR Rocky Mountain Regional Series</title>
+</head>
+<!--cookies-->
+    <div id="pitStopModal">
+        <div class="modal-box">
+            <h2>Cookies?</h2>
+            <p>Do you agree to our data tracking (cookies)?</p>
+            <button class="btn accept" onclick="closeModal()">Yes</button>
+            <button class="btn reject" onclick="closeModal()">No</button>
+        </div>
+    </div>
 <body>
     <nav><a href="index.html">Home</a> | <a href="schedule.html">Schedule/Standings</a> | <a href="garage.html">Drivers</a></nav>
-<div class="gallery">
+
+        <div class="search-container">
+            <input type="text" id="driverSearch" placeholder="Search by name, #car, or team..." onkeyup="filterDrivers()">
+        </div>
+    <div class="gallery">
     <div class="driver-card">
-        <img src="/Images/gabe.png" alt="Gabe Andrew">
+        <img src="Images/gabe.png" alt="Gabe Andrew">
         <div class="stats-overlay">
             <h3>Gabe Andrew</h3>
             <p><strong>Car:</strong> #1</p>
@@ -15,7 +31,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/tron.png" alt="Tron Bruncheese">
+        <img src="Images/tron.png" alt="Tron Bruncheese">
         <div class="stats-overlay">
             <h3>Tron Bruncheese</h3>
             <p><strong>Car:</strong> #4</p>
@@ -25,7 +41,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/cody.png" alt="Cody Carter">
+        <img src="Images/cody.png" alt="Cody Carter">
         <div class="stats-overlay">
             <h3>Cody Carter</h3>
             <p><strong>Car:</strong> #5</p>
@@ -35,7 +51,7 @@
     </div>
 
         <div class="driver-card">
-        <img src="/Images/mj.png" alt="MJ Nelson">
+        <img src="Images/mj.png" alt="MJ Nelson">
         <div class="stats-overlay">
             <h3>MJ Nelson</h3>
             <p><strong>Car:</strong> #6</p>
@@ -45,7 +61,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/izzy.png" alt="Izzy Deschamps">
+        <img src="Images/izzy.png" alt="Izzy Deschamps">
         <div class="stats-overlay">
             <h3>Izzy Deschamps</h3>
             <p><strong>Car:</strong> #7</p>
@@ -55,7 +71,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/connor.png" alt="Connor Fenn">
+        <img src="Images/connor.png" alt="Connor Fenn">
         <div class="stats-overlay">
             <h3>Connor Fenn</h3>
             <p><strong>Car:</strong> #8</p>
@@ -65,7 +81,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/dek.png" alt="Dek Trimble">
+        <img src="Images/dek.png" alt="Dek Trimble">
         <div class="stats-overlay">
             <h3>Dek "Teakwood" Trimble</h3>
             <p><strong>Car:</strong> #9</p>
@@ -75,7 +91,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/dylan.png" alt="Dylan Thiel">
+        <img src="Images/dylan.png" alt="Dylan Thiel">
         <div class="stats-overlay">
             <h3>Dylan Thiel</h3>
             <p><strong>Car:</strong> #10</p>
@@ -85,7 +101,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/audrey.png" alt="Audrey Deschamps">
+        <img src="Images/audrey.png" alt="Audrey Deschamps">
         <div class="stats-overlay">
             <h3>Audrey Deschamps</h3>
             <p><strong>Car:</strong> #12</p>
@@ -95,7 +111,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/tayla.png" alt="Tayla Mendenhall">
+        <img src="Images/tayla.png" alt="Tayla Mendenhall">
         <div class="stats-overlay">
             <h3>Tayla Mendenhall</h3>
             <p><strong>Car:</strong> #13</p>
@@ -105,7 +121,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/lincoln.png" alt="Lincoln Kennard">
+        <img src="Images/lincoln.png" alt="Lincoln Kennard">
         <div class="stats-overlay">
             <h3>Lincoln Kennard</h3>
             <p><strong>Car:</strong> #16</p>
@@ -115,7 +131,7 @@
     </div>
     
     <div class="driver-card">
-        <img src="/Images/ty.png" alt="Ty Nichols">
+        <img src="Images/ty.png" alt="Ty Nichols">
         <div class="stats-overlay">
             <h3>Ty "T-Nyce" Nichols</h3>
             <p><strong>Car:</strong> #17</p>
@@ -125,7 +141,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/caeden.png" alt="Caeden Cataldo">
+        <img src="Images/caeden.png" alt="Caeden Cataldo">
         <div class="stats-overlay">
             <h3>Caeden Cataldo</h3>
             <p><strong>Car:</strong> #19</p>
@@ -135,7 +151,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/kylee.png" alt="Kylee Nichols">
+        <img src="Images/kylee.png" alt="Kylee Nichols">
         <div class="stats-overlay">
             <h3>Kylee Nichols</h3>
             <p><strong>Car:</strong> #20</p>
@@ -145,7 +161,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/lowynn.png" alt="Lowynn Sprague">
+        <img src="Images/lowynn.png" alt="Lowynn Sprague">
         <div class="stats-overlay">
             <h3>Lowynn Sprague</h3>
             <p><strong>Car:</strong> #21</p>
@@ -155,7 +171,7 @@
     </div>
 
         <div class="driver-card">
-        <img src="/Images/kyle.png" alt="Kyle Dodds">
+        <img src="Images/kyle.png" alt="Kyle Dodds">
         <div class="stats-overlay">
             <h3>Kyle Dodds</h3>
             <p><strong>Car:</strong> #25</p>
@@ -165,7 +181,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/kaleb.png" alt="Kaleb Dymock">
+        <img src="Images/kaleb.png" alt="Kaleb Dymock">
         <div class="stats-overlay">
             <h3>Kaleb Dymock</h3>
             <p><strong>Car:</strong> #27</p>
@@ -175,7 +191,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/ella.png" alt="Ella Deschamps">
+        <img src="Images/ella.png" alt="Ella Deschamps">
         <div class="stats-overlay">
             <h3>Ella Deschamps</h3>
             <p><strong>Car:</strong> #28</p>
@@ -185,7 +201,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/lucas.png" alt="Lucas Andreson">
+        <img src="Images/lucas.png" alt="Lucas Andreson">
         <div class="stats-overlay">
             <h3>Lucas Andreson</h3>
             <p><strong>Car:</strong> #35</p>
@@ -195,7 +211,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/malea.png" alt="Malea Ainge">
+        <img src="Images/malea.png" alt="Malea Ainge">
         <div class="stats-overlay">
             <h3>Malea Ainge</h3>
             <p><strong>Car:</strong> #39</p>
@@ -205,7 +221,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/brooklyn.png" alt="Brooklyn Loveless">
+        <img src="Images/brooklyn.png" alt="Brooklyn Loveless">
         <div class="stats-overlay">
             <h3>Brooklyn Loveless</h3>
             <p><strong>Car:</strong> #44</p>
@@ -215,7 +231,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/jaxen.png" alt="Jaxen Jensen">
+        <img src="Images/jaxen.png" alt="Jaxen Jensen">
         <div class="stats-overlay">
             <h3>Jaxen Jensen</h3>
             <p><strong>Car:</strong> #45</p>
@@ -225,7 +241,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/brock.png" alt="Brock Nichols">
+        <img src="Images/brock.png" alt="Brock Nichols">
         <div class="stats-overlay">
             <h3>Brock Nichols</h3>
             <p><strong>Car:</strong> #47</p>
@@ -235,7 +251,17 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/fayth.png" alt="Fayth Christensen">
+        <img src="Images/mcdaniel.jpg" alt="Sam McDaniel">
+        <div class="stats-overlay">
+            <h3>Sam McDaniel</h3>
+            <p><strong>Car:</strong> #48</p>
+            <p><strong>Wins:</strong> 4</p>
+            <p><strong>Team:</strong> Hendrick Motorsports</p>
+        </div>
+    </div>
+
+    <div class="driver-card">
+        <img src="Images/fayth.png" alt="Fayth Christensen">
         <div class="stats-overlay">
             <h3>Fayth Christensen</h3>
             <p><strong>Car:</strong> #53</p>
@@ -245,7 +271,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/gavin.png" alt="Gavin Thiel">
+        <img src="Images/gavin.png" alt="Gavin Thiel">
         <div class="stats-overlay">
             <h3>Gavin Thiel</h3>
             <p><strong>Car:</strong> #55</p>
@@ -255,7 +281,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/max.png" alt="Max Turner">
+        <img src="Images/max.png" alt="Max Turner">
         <div class="stats-overlay">
             <h3>Max Turner</h3>
             <p><strong>Car:</strong> #67</p>
@@ -265,7 +291,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/lyle.png" alt="Lyle Christensen">
+        <img src="Images/lyle.png" alt="Lyle Christensen">
         <div class="stats-overlay">
             <h3>Lyle "Thor" Christensen</h3>
             <p><strong>Car:</strong> #69</p>
@@ -275,7 +301,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/ava.png" alt="Ava White">
+        <img src="Images/ava.png" alt="Ava White" loading="lazy">
         <div class="stats-overlay">
             <h3>Ava White</h3>
             <p><strong>Car:</strong> #70</p>
@@ -285,7 +311,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/kasen.png" alt="Kasen Kelander">
+        <img src="Images/kasen.png" alt="Kasen Kelander" loading="lazy">
         <div class="stats-overlay">
             <h3>Kasen Kelander</h3>
             <p><strong>Car:</strong> #71</p>
@@ -295,7 +321,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/grace.png" alt="Grace Tsai">
+        <img src="Images/grace.png" alt="Grace Tsai" loading="lazy">
         <div class="stats-overlay">
             <h3>Grace Tsai</h3>
             <p><strong>Car:</strong> #73</p>
@@ -305,7 +331,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/brooklynN.png" alt="Brooklyn Nichols">
+        <img src="Images/brooklynN.png" alt="Brooklyn Nichols" loading="lazy">
         <div class="stats-overlay">
             <h3>Brooklyn Nichols</h3>
             <p><strong>Car:</strong> #80</p>
@@ -315,7 +341,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/gage.png" alt="Gage Thiel">
+        <img src="Images/gage.png" alt="Gage Thiel" loading="lazy">
         <div class="stats-overlay">
             <h3>Gage "Gagerade" Thiel</h3>
             <p><strong>Car:</strong> #85</p>
@@ -325,7 +351,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/melissa.png" alt="Melissa Nelson">
+        <img src="Images/melissa.png" alt="Melissa Nelson" loading="lazy">
         <div class="stats-overlay">
             <h3>Melissa Nelson</h3>
             <p><strong>Car:</strong> #87</p>
@@ -335,7 +361,17 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/branson.png" alt="Branson Cowan">
+        <img src="Images/turner.jpg" alt="Sam Turner" loading="lazy">
+        <div class="stats-overlay">
+            <h3>Sam Turner</h3>
+            <p><strong>Car:</strong> #88</p>
+            <p><strong>Wins:</strong> 3</p>
+            <p><strong>Team:</strong> Hendrick Motorsports</p>
+        </div>
+    </div>
+
+    <div class="driver-card">
+        <img src="Images/branson.png" alt="Branson Cowan" loading="lazy">
         <div class="stats-overlay">
             <h3>Branson Cowan</h3>
             <p><strong>Car:</strong> #95</p>
@@ -345,7 +381,7 @@
     </div>
 
     <div class="driver-card">
-        <img src="/Images/trevan.png" alt="Trevan Haws">
+        <img src="Images/trevan.png" alt="Trevan Haws" loading="lazy">
         <div class="stats-overlay">
             <h3>Trevan Haws</h3>
             <p><strong>Car:</strong> #99</p>
@@ -354,6 +390,9 @@
         </div>
     </div>
 </div>
+
+<button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
     <script src="nascar.js"></script>
 </body>
 </html>

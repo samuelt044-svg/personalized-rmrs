@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" href="nascar.css"></head>
+<head>
+    <link rel="stylesheet" href="nascar.css">
+    <title>Home | NASCAR Rocky Mountain Regional Series</title>
+</head>
 <body>
     <div id="pitStopModal">
         <div class="modal-box">
@@ -13,16 +16,42 @@
 
     <nav><a href="index.html">Home</a> | <a href="schedule.html">Schedule/Standings</a> | <a href="garage.html">Drivers</a></nav>
 
+    <main>
+
+<div class="race-ticker">
+    <div class="ticker-item">🏆 LATEST WINNER: Sam Turner (Cadillac 200)</div>
+    <div class="ticker-item">🌴 NEXT RACE: Daytona Beach Grand Prix</div>
+</div>
+
     <div class="container">
         <h1>NASCAR Rocky Mountain Regional Series</h1>
         <p>Welcome to the official site of the NASCAR Rocky Mountain Regional Series. Founded by Utahn Sam Turner and upheld by many passionate stock car racing drivers of the Rocky Mountain region.</p>
         <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e790b734" alt="Stock Car">
-            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d" alt="Race Track">
+            <img src="Images/Kansas.png" alt="Gage Thiel at Kansas Motor Speedway">
+            <img src="Images/watkinsGlen.png" alt="Sam Turner crashing at Watkins Glen">
         </div>
     </div>
 
+    <section class="featured-driver">
+    <div class="featured-badge">Current Points Leader</div>
+    <div class="featured-content">
+        <img src="Images/48.jpg" alt="Sam McDaniel" class="featured-img">
+        <div class="featured-info">
+            <h2>Sam McDaniel</h2>
+            <p class="driver-team">Team: Hendrick Motorsports | Car: #48</p>
+            <div class="quick-stats">
+                <div class="stat-box"><span>Wins</span><strong>4</strong></div>
+                <div class="stat-box"><span>Points</span><strong>2131</strong></div>
+                <div class="stat-box"><span>Laps Led</span><strong>480</strong></div>
+            </div>
+            <a href="garage.html" class="btn-primary">View Full Roster</a>
+        </div>
+    </div>
+</section>
+
     <div id="lightbox"><img id="lightboxImg"></div>
+
+    </main>
     <script src="nascar.js"></script>
 </body>
 </html>

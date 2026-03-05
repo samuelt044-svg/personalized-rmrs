@@ -1,12 +1,239 @@
 <!DOCTYPE html>
-<html>
-<head><link rel="stylesheet" href="nascar.css"></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule & Standings | NASCAR Rocky Mountain Regional Series</title>
+    <link rel="stylesheet" href="nascar.css">
+</head>
 <body>
-    <nav><a href="index.html">Home</a> | <a href="schedule.html">Schedule/Standings</a> | <a href="garage.html">Drivers</a></nav>
-    <div class="container">
-        <h2>Season Schedule</h2>
-        <div id="schedule-list">Loading the leaderboard...</div>
+    <div id="pitStopModal">
+        <div class="modal-box">
+            <h2>Cookies?</h2>
+            <p>Do you agree to our data tracking (cookies)?</p>
+            <button class="btn accept" onclick="closeModal()">Yes</button>
+            <button class="btn reject" onclick="closeModal()">No</button>
+        </div>
     </div>
+
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="schedule.html">Schedule/Standings</a> | 
+        <a href="garage.html">Drivers</a>
+    </nav>
+
+    <div class="container">
+        <h1>2025-2026 Season Schedule</h1>
+        <p>NASCAR Rocky Mountain Regional Series</p>
+
+        <table class="table-container">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Track</th>
+                    <th>Winner</th>
+                    <th>Most Laps Led</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dalion 500</td>
+                    <td>Daytona International Speedway</td>
+                    <td>Sam McDaniel</td>
+                    <td>Sam McDaniel / MJ Nelson</td>
+                </tr>
+                <tr>
+                    <td>Hershey's 400</td>
+                    <td>Auto Club Speedway</td>
+                    <td>Sam McDaniel</td>
+                    <td>MJ Nelson</td>
+                </tr>
+                <tr>
+                    <td>Lucky Charms 400</td>
+                    <td>Atlanta Motor Speedway</td>
+                    <td>Brooklyn Loveless</td>
+                    <td>Dylan Thiel</td>
+                </tr>
+                <tr>
+                    <td>Dollar Tree 500</td>
+                    <td>Bristol Motor Speedway</td>
+                    <td>Sam Turner</td>
+                    <td>Sam Turner</td>
+                </tr>
+                <tr>
+                    <td>Kevin Bacon 500</td>
+                    <td>Talladega Superspeedway</td>
+                    <td>Kaleb Dymock</td>
+                    <td>Sam McDaniel</td>
+                </tr>
+                <tr>
+                    <td>Google 400</td>
+                    <td>Dover Motor Speedway</td>
+                    <td>Tayla Mendenhall</td>
+                    <td>Sam Turner</td>
+                </tr>
+                <tr>
+                    <td>Legacy Motor Club At The Glen</td>
+                    <td>Watkins Glen Raceway</td>
+                    <td>Sam Turner</td>
+                    <td>Branson Cowan</td>
+                </tr>
+                <tr>
+                    <td>Roku 400</td>
+                    <td>Texas Motor Speedway</td>
+                    <td>Lucas Andreson</td>
+                    <td>Branson Cowan</td>
+                </tr>
+                <tr>
+                    <td>Fry Sauce 400</td>
+                    <td>Martinsville Speedway</td>
+                    <td>Gabe Andrew</td>
+                    <td>Marian Hill</td>
+                </tr>
+                <tr>
+                    <td>Mindfully Millie Roval 400</td>
+                    <td>Charlotte ROVAL</td>
+                    <td>Trevan Haws</td>
+                    <td>Trevan Haws / MJ Nelson</td>
+                </tr>
+                <tr>
+                    <td>Ministry Of Magic 150</td>
+                    <td>New Hampshire Motor Speedway</td>
+                    <td>MJ Nelson</td>
+                    <td>Sam Turner</td>
+                </tr>
+                <tr>
+                    <td>Pontiac 400</td>
+                    <td>Kansas Motor Speedway</td>
+                    <td>Gage Thiel</td>
+                    <td>Ty Nichols</td>
+                </tr>
+                <tr>
+                    <td>Pocono 225</td>
+                    <td>Pocono Raceway</td>
+                    <td>Sam McDaniel</td>
+                    <td>Sam McDaniel</td>
+                </tr>
+                <tr>
+                    <td>Boy Scouts Of America 400</td>
+                    <td>Chicagoland Speedway</td>
+                    <td>Ty Nichols</td>
+                    <td>Ty Nichols</td>
+                </tr>
+                <tr>
+                    <td>Gatorade 400</td>
+                    <td>Rockingham Speedway</td>
+                    <td>Lucas Andreson</td>
+                    <td>Lucas Andreson</td>
+                </tr>
+                <tr>
+                    <td>Lego 400</td>
+                    <td>Las Vegas Motor Speedway</td>
+                    <td>Sam McDaniel</td>
+                    <td>Sam McDaniel</td>
+                </tr>
+                <tr>
+                    <td>Western 500</td>
+                    <td>Darlington International Raceway</td>
+                    <td>Dylan Thiel</td>
+                    <td>Dylan Thiel</td>
+                </tr>
+                <tr>
+                    <td>Walmart 200</td>
+                    <td>Watkins Glen International</td>
+                    <td>Connor Fenn</td>
+                    <td>Kylee Nichols</td>
+                </tr>
+                <tr>
+                    <td>Twenty One Pilots 200</td>
+                    <td>Daytona International Speedway</td>
+                    <td>Connor Fenn</td>
+                    <td>Connor Fenn</td>
+                </tr>
+                <tr>
+                    <td>Regular Season Finale</td>
+                    <td>Bristol Motor Speedway</td>
+                    <td>Tron Bruncheese</td>
+                    <td>Tron Bruncheese</td>
+                </tr>
+                <tr class="cutoff-row">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cadillac 200</td>
+                    <td>Richmond Raceway</td>
+                    <td>Sam Turner</td>
+                    <td>Ava White</td>
+                </tr>
+                <tr>
+                    <td>Daytona Beach Grand Prix</td>
+                    <td>Daytona Beach</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Emoji Kitchen 600</td>
+                    <td>Charlotte Motor Speedway</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Polar Queen 200</td>
+                    <td>Phoenix Raceway</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Brooklands Grand Prix</td>
+                    <td>Brooklands</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Courtyard 400</td>
+                    <td>Indianapolis Raceway</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lifesavers 200</td>
+                    <td>Michigan International Speedway</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2 Hours Of Le Mans</td>
+                    <td>Circuit De La Sarthe</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>BYU 250</td>
+                    <td>Homestead-Miami Speedway</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rocky Mountain 200</td>
+                    <td>Salt Lake Speedway</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Points Standings</h2>
+
+            <!--Beta JSON implementation-->
+            <div id="standings-output">
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
     <script src="nascar.js"></script>
 </body>
 </html>
