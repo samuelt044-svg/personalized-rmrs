@@ -142,6 +142,35 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Single column for driver cards */
+        padding: 10px; /* Less wasted space on the edges */
+        gap: 15px;
+    }
+    
+    .driver-card {
+        height: 250px; /* Give them a bit more height on mobile */
+    }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 5px;
+        font-size: 0.8rem; /* Smaller links so they stay on one line */
+    }
+    
+    .stats-overlay {
+        transform: translateY(0); /* Always show stats on mobile */
+        background: rgba(225, 90, 0, 0.8);
+        position: relative; /* Put stats BELOW the image instead of over it */
+    }
+    
+    .driver-card {
+        height: auto; 
+    }
+}
+
 /* For phones (1 column) */
 @media (max-width: 500px) {
     .gallery {
