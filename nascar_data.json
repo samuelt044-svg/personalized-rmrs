@@ -27,13 +27,13 @@
     { "pos": 25, "name": "Kyle Dodds", "team": "Fiat Motorsports", "wins": 0, "points": 337 },
     { "pos": 26, "name": "Ella Deschamps", "team": "Kawasaki Racing", "wins": 0, "points": 318 },
     { "pos": 27, "name": "Connor Fenn", "team": "Bugatti Racing", "wins": 2, "points": 310 },
-    { "pos": 28, "name": "Grace Tsai", "team": "Tesla Motorsports", "wins": 0, "points":  },
-    { "pos": 29, "name": "Dek Trimble", "team": "KTM Racing", "wins": 0, "points":  },
-    { "pos": 30, "name": "Madeline Turner", "team": "Tesla Motorsports", "wins": 0, "points":  },
-    { "pos": 31, "name": "Malea Ainge", "team": "Cadillac Racing", "wins": 0, "points":  },
-    { "pos": 32, "name": "Max Turner", "team": "Lamborghini Racing", "wins": 0, "points":  },
-    { "pos": 33, "name": "Michael Harris Ovalle", "team": "Hendrick Motorsports", "wins": 0, "points":  },
-    { "pos": 34, "name": "Brock Nichols", "team": "Lamborghini Racing", "wins": 0, "points":  },
+    { "pos": 28, "name": "Grace Tsai", "team": "Tesla Motorsports", "wins": 0, "points":  302},
+    { "pos": 29, "name": "Dek Trimble", "team": "KTM Racing", "wins": 0, "points": 278 },
+    { "pos": 30, "name": "Madeline Turner", "team": "Tesla Motorsports", "wins": 0, "points": 252 },
+    { "pos": 31, "name": "Malea Ainge", "team": "Cadillac Racing", "wins": 0, "points": 244 },
+    { "pos": 32, "name": "Max Turner", "team": "Lamborghini Racing", "wins": 0, "points": 236 },
+    { "pos": 33, "name": "Michael Harris Ovalle", "team": "Hendrick Motorsports", "wins": 0, "points": 228 },
+    { "pos": 34, "name": "Brock Nichols", "team": "Lamborghini Racing", "wins": 0, "points": 212},
     { "pos": 35, "name": "Kylee Nichols", "team": "Lemonjello Racing", "wins": 0, "points": 181 },
     { "pos": 36, "name": "Izzy Deschamps", "team": "Lemonjello Racing", "wins": 0, "points": 181 },
     { "pos": 37, "name": "Preston Deschamps", "team": "Rolls-Royce Motorsports", "wins": 0, "points": 175 },
@@ -60,9 +60,27 @@
     { "pos": 58, "name": "David Crawford", "team": "Lemonjello Racing", "wins": 0, "points": 14 },
     { "pos": 59, "name": "Vince Kitchen", "team": "Joe Gibbs Racing", "wins": 0, "points": 11 },
     { "pos": 60, "name": "Phoenix Davis", "team": "Hendrick Motorsports", "wins": 0, "points": 4 }
+  ],
+  "schedule": [
+    { "race": "Dalion 500", "track": "Daytona International Speedway", "date": "", "winner": "Sam McDaniel" },
+    { "race": "Hershey's 400", "track": "Auto Club Speedway", "date": "", "winner": "Sam McDaniel" },
+    { "race": "Lucky Charms 400", "track": "Atlanta Motor Speedway", "date": "", "winner": "Brooklyn Loveless" },
+    { "race": "Dollar Tree 500", "track": "Bristol Motor Speedway", "date": "", "winner": "Sam Turner" },
+    { "race": "Kevin Bacon 500", "track": "Talladega Superspeedway", "date": "", "winner": "Kaleb Dymock" },
+    { "race": "Google 400", "track": "Dover Motor Speedway", "date": "", "winner": "Tayla Mendenhall" },
+    { "race": "Legacy Motor Club At The Glen", "track": "Watkins Glen Raceway", "date": "", "winner": "Sam Turner" },
+    { "race": "Roku 400", "track": "Texas Motor Speedway", "date": "", "winner": "Lucas Andreson" },
+    { "race": "Fry Sauce 400", "track": "Martinsville Speedway", "date": "", "winner": "Gabe Andrew" },
+    { "race": "Mindfully Millie Roval 400", "track": "Charlotte ROVAL", "date": "", "winner": "Trevan Haws" },
+    { "race": "Ministry Of Magic 150", "track": "New Hampshire Motor Speedway", "date": "", "winner": "MJ Nelson" },
+    { "race": "Pontiac 400", "track": "Kansas Motor Speedway", "date": "", "winner": "Gage Thiel" },
+    { "race": "Pocono 225", "track": "Pocono Raceway", "date": "", "winner": "Sam McDaniel" },
+    { "race": "Boy Scouts Of America 400", "track": "Chicagoland Speedway", "date": "", "winner": "Ty Nichols" },
+    { "race": "Gatorade 400", "track": "Rockingham Speedway", "date": "", "winner": "Lucas Andreson" },
+    { "race": "Lego 400", "track": "Las Vegas Motor Speedway", "date": "", "winner": "Sam McDaniel" },
+    { "race": "Western 500", "track": "Darlington International Raceway", "date": "", "winner": "Dylan Thiel" },
+    { "race": "Walmart 200", "track": "Watkins Glen International", "date": "", "winner": "Connor Fenn" },
+    { "race": "Twenty One Pilots 200", "track": "Daytona International Speedway", "date": "", "winner": "Connor Fenn" },
+    { "race": "Regular Season Finale", "track": "Bristol Motor Speedway", "date": "", "winner": "Tron Bruncheese" }
   ]
-
 }
-
-
-
