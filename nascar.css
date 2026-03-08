@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+main {
+    padding: 20px;
+}
+
 .container {
     padding: 20px;
     max-width: 1000px;
@@ -183,6 +187,9 @@ nav {
     padding: 1rem;
     text-align: center;
     border-bottom: 3px solid #e16100;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -227,13 +234,13 @@ tr:nth-child(even) {
 thead th {
     position: sticky;
     top: 0;
-    background-color: #333; /* Matches your header color */
+    background-color: #333;
     z-index: 10;
 }
 
 .table-container {
     width: 100%;
-    overflow-x: auto; /* Allows users to swipe left/right on the table if it's too wide */
+    overflow-x: auto;
 }
 
 .cutoff-row {
@@ -311,8 +318,17 @@ thead th {
     text-align: center;
 }
 
-.stat-box span { display: block; font-size: 0.7rem; text-transform: uppercase; color: #aaa; }
-.stat-box strong { font-size: 1.5rem; color: #fff; }
+.stat-box span { 
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 5px;}
+
+.stat-box strong { 
+    font-size: 1.5rem; color: #fff;
+    font-weight: bold;
+}
 
 .btn-primary {
     display: inline-block;
@@ -349,7 +365,7 @@ thead th {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #e10600; /* NASCAR Red */
+  background-color: #e18700; /* NASCAR Red */
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -362,7 +378,7 @@ thead th {
 }
 
 #backToTop:hover {
-  background-color: #ff8400; /* Switches to your orange on hover */
+  background-color: #4e97ff;
   transform: scale(1.1);
 }
 
@@ -393,4 +409,55 @@ thead th {
 
 .video-section iframe {
     max-width: 100%;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.news a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.news a:hover {
+    transform: scale(1.05);
+    border-color: #e16900;
+}
+
+.news img {
+    width: 100%;
+    margin: 10px;
+    height: auto;
+}
+
+.news h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background: #d58a00;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f4f4f4;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #1a1a1a;
 }
