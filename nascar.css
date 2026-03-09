@@ -445,7 +445,7 @@ thead th {
 }
 
 footer {
-    background: #d58a00;
+    background: #825b11;
     color: #f4f4f4;
     text-align: center;
     padding: 20px 0;
@@ -459,5 +459,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #1a1a1a;
+    color: #3d9bff;
 }
