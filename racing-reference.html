@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="nascar.css">
+    <title>Racing Reference | NASCAR Rocky Mountain Regional Series</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="pitStopModal">
+        <div class="modal-box">
+            <h2>Cookies?</h2>
+            <p>Do you agree to our data tracking (cookies)?</p>
+            <button class="btn accept" onclick="closeModal()">Yes</button>
+            <button class="btn reject" onclick="closeModal()">No</button>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="nav-logo"><img src="logo.png" alt="RMRS Logo"></a>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="garage.html">Drivers</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="racing-reference.html" class="active">Racing Reference</a></li>
+                <li><a href="paint-schemes.html">Paint Schemes</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" id="navSearch" placeholder="Search...">
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Racing Reference Guide</h1>
+            <p>Learn the terminology, rules, and concepts of stock car racing.</p>
+
+            <section class="reference-section">
+                <h2>Common Racing Terms</h2>
+                
+                <div class="reference-card">
+                    <h3>Pit Stop</h3>
+                    <p>A scheduled stop where the crew services the vehicle—changing tires, adding fuel, and making repairs. Pit stops are critical to race strategy.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Drafting</h3>
+                    <p>A technique where a driver follows closely behind another vehicle to reduce wind resistance, allowing faster speeds on straightaways.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Lapping</h3>
+                    <p>When the leader(s) lap a slower car, meaning they complete one more full lap than that car. Lapped traffic can significantly affect race dynamics.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Yellow Flag / Caution</h3>
+                    <p>Displayed when there's an incident on track (crash, debris, weather). Drivers must slow down, and no passing is allowed until the green flag returns.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Green Flag</h3>
+                    <p>Signals the start of a race or the resumption of racing after a caution period.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Red Flag</h3>
+                    <p>Stops the race entirely due to severe weather, major accidents, or track hazards. All drivers must return to pit lane.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Checkered Flag</h3>
+                    <p>Waves to signify the end of the race. The first driver to cross the finish line under the checkered flag is the winner.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Points Leader</h3>
+                    <p>The driver currently leading in overall championship points. Points are awarded based on finishing position in each race.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Pole Position</h3>
+                    <p>The first starting position in a race, typically earned by the driver with the fastest qualifying lap.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Bump and Run</h3>
+                    <p>A controversial racing maneuver where a driver intentionally bumps a competitor to move them aside, often used in close finishes.</p>
+                </div>
+            </section>
+
+            <section class="reference-section">
+                <h2>Racing Rules & Penalties</h2>
+                
+                <div class="reference-card">
+                    <h3>Contact Penalties</h3>
+                    <p>Drivers can be penalized for aggressive contact, dangerous driving, or causing avoidable incidents. Penalties may include laps lost or disqualification.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Speeding on Pit Road</h3>
+                    <p>Drivers must maintain a strict speed limit on pit road (typically 35-55 mph depending on track). Violations result in time penalties or pit road pass-throughs.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Equipment Failure</h3>
+                    <p>If a car experiences mechanical issues (engine failure, transmission problems), the driver must exit the race. Teams cannot repair certain issues during the race.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Loose Wheels / Equipment Loss</h3>
+                    <p>Losing a wheel or piece of equipment during a pit stop results in immediate penalties and crew fines.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Fuel Mileage Strategy</h3>
+                    <p>Drivers must manage fuel consumption throughout the race. Running out of fuel before the finish line results in DNF (Did Not Finish).</p>
+                </div>
+            </section>
+
+            <section class="reference-section">
+                <h2>Car Setup & Performance</h2>
+                
+                <div class="reference-card">
+                    <h3>Tire Wear</h3>
+                    <p>Tires degrade over time during a race. Teams must balance when to pit for fresh tires versus maintaining track position.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Handling</h3>
+                    <p>Refers to how well the car responds to the driver's inputs. "Tight" means the front end doesn't turn well; "loose" means the rear slides excessively.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Downforce</h3>
+                    <p>Aerodynamic force that pushes the car down, improving traction and cornering speed. More downforce helps handling but reduces top speed.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Fuel Strategy</h3>
+                    <p>Teams plan pit stops and fuel consumption to ensure they can reach the finish line, often requiring careful calculation based on track position.</p>
+                </div>
+            </section>
+
+            <section class="reference-section">
+                <h2>Race Positions & Standings</h2>
+                
+                <div class="reference-card">
+                    <h3>Championship Points</h3>
+                    <p>Points are awarded based on finishing position (1st place = most points, down through the field). Bonus points may be awarded for leading laps or most laps led.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>DNF (Did Not Finish)</h3>
+                    <p>A driver who does not complete the race due to mechanical failure, accident, or other reasons. DNF typically awards fewer points than a finishing position.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>Playoff Format</h3>
+                    <p>The top drivers advance to playoff races where they compete for the championship title. Playoff races often have unique formats or points resets.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/rockymountainseries" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/playlist?list=PLHA_OisPKP3mWQIbl4coctXpRQUfTPnfN" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                <p>NASCAR® and its marks are trademarks of the National Association for Stock Car Auto Racing, LLC. All other trademarks are the property of their respective owners.</p>
+                <p>Copyright © 2026 NASCAR Digital Media, LLC. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="contact.html">Contact</a> |
+            <a href="FAQ.html">FAQ</a> |
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSek1Y71kkJDkBIuG7sALUJb1JHS5KzAROmO3LcNxYLehcZB1w/viewform?usp=header" target="_blank" rel="noopener noreferrer">Paint Scheme Request</a>
+        </div>
+    </footer>
+
+    <script src="nascar.js"></script>
+</body>
+</html>
