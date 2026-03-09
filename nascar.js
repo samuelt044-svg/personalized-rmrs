@@ -84,6 +84,53 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error("Data load failed:", err);
             });
     }
+
+    // --- THEME TOGGLE ---
+    // Create or reuse toggle button (with icon) and append to footer if present
+    function createThemeToggle() {
+        if (document.getElementById('themeToggle')) return;
+        const btn = document.createElement('button');
+        btn.id = 'themeToggle';
+        const icon = document.createElement('i');
+        icon.className = 'fas fa-moon';
+        btn.appendChild(icon);
+        btn.onclick = () => toggleTheme();
+
+        const footer = document.querySelector('footer');
+        if (footer) {
+            // insert before social icons div if present
+            const social = footer.querySelector('.social');
+            if (social) footer.insertBefore(btn, social);
+            else footer.appendChild(btn);
+        } else {
+            // fallback: append to nav
+            const nav = document.querySelector('nav');
+            if (nav) nav.appendChild(btn);
+        }
+    }
+
+    createThemeToggle();
+
+    // Initialize theme from localStorage
+    const userTheme = localStorage.getItem('theme');
+    const root = document.documentElement;
+    if (userTheme === 'light') {
+        root.classList.add('light-mode');
+        const t = document.querySelector('#themeToggle i'); if (t) { t.className = 'fas fa-sun'; }
+    }
+
+    window.toggleTheme = function() {
+        if (root.classList.contains('light-mode')) {
+            root.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+            const t = document.querySelector('#themeToggle i'); if (t) { t.className = 'fas fa-moon'; }
+        } else {
+            root.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+            const t = document.querySelector('#themeToggle i'); if (t) { t.className = 'fas fa-sun'; }
+        }
+    }
+
 });
 
 // --- 4. SEARCH & BACK TO TOP ---
