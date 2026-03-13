@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../nascar.css">
+    <title>Sam Turner NASCAR Driver Page | Stats, Results, Bio | NASCAR</title>
+    <link rel="icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="pitStopModal">
+        <div class="modal-box">
+            <h2>Cookies?</h2>
+            <p>Do you agree to our data tracking (cookies)?</p>
+            <button class="btn accept" onclick="closeModal()">Yes</button>
+            <button class="btn reject" onclick="closeModal()">No</button>
+        </div>
+    </div>
+
+    <nav>
+        <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="RMRS Logo"></a>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="../schedule.html">Schedule</a></li>
+                <li><a href="../garage.html">Drivers</a></li>
+                <li><a href="../news.html">News</a></li>
+                <li><a href="../racing-reference.html">Racing Reference</a></li>
+                <li><a href="../paint-schemes.html">Paint Schemes</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" id="navSearch" placeholder="Search...">
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <img src="../Images/sam.png" alt="Sam Turner" class="driver-profile-pic">
+    <img src="../Images/88.png" alt="88" class="driver-profile-pic" width="200">
+    
+    <h1>Date of Birth</h1>
+    <p>8/29/2008</p>
+    
+    <h1>Hometown</h1>
+    <p>Payson, UT</p>
+
+    <h1>Crew Chief</h1>
+    <p>Alan Gustafson</p>
+
+    <h1>Team</h1>
+    <p>Hendrick Motorsports</p>
+
+    </main>
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/rockymountainseries" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/playlist?list=PLHA_OisPKP3mWQIbl4coctXpRQUfTPnfN" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <p>NASCAR® and its marks are trademarks of the National Association for Stock Car Auto Racing, LLC. All other trademarks are the property of their respective owners.</p>
+            <p>Copyright © 2026 NASCAR Digital Media, LLC. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="../contact.html">Contact</a> |
+            <a href="../faq.html">FAQ</a> |
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSek1Y71kkJDkBIuG7sALUJb1JHS5KzAROmO3LcNxYLehcZB1w/viewform?usp=header" target="_blank" rel="noopener noreferrer">Paint Scheme Request</a>
+        </div>
+    </footer>
+
+    <script src="../nascar.js"></script>
+    <script>
+        function switchTab(tabName) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            contents.forEach(content => content.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

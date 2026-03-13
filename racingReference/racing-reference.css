@@ -40,6 +40,11 @@
     --footer-bg: #ffa600;
     --backtotop-bg: #ff8800;
     --link-hover: #e16900;
+    --primary-color: #003366;
+    --accent-color: #e18700;
+    --light-bg: #ffffff;
+    --border-color: #000000;
+    --text-color: #111;
 }
 
 /* Color Scheme */
@@ -47,17 +52,9 @@
     --primary-color: #003366;
     --accent-color: #e18700;
     --light-bg: #f5f5f5;
-    --border-color: #ddd;
+    --border-color: #000000;
     --text-color: #333;
     --link-color: #0066cc;
-}
-
-.light-mode {
-    --primary-color: #003366;
-    --accent-color: #e18700;
-    --light-bg: #ffffff;
-    --border-color: #e0e0e0;
-    --text-color: #111;
 }
 
 body {
@@ -165,15 +162,6 @@ tbody tr:nth-child(odd) {
 tbody tr:hover {
     background: #f0f8ff;
     transition: background-color 0.2s;
-}
-
-tbody tr:first-child {
-    background: #fffacd;
-    font-weight: bold;
-}
-
-tbody tr:first-child:hover {
-    background: #ffeb99;
 }
 
 /* Lap Leader & Caution Tables */
