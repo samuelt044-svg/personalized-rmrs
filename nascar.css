@@ -18,6 +18,7 @@
     --footer-bg: #3b7fbe;
     --backtotop-bg: #ffae00;
     --link-hover: #ffa500;
+    --navbar-height: 70px;
 }
 
 /* Light mode variables */
@@ -455,12 +456,18 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     background: var(--table-bg);
+    border: 1px solid var(--border);
 }
 
 th, td {
-    padding: 12px 15px;
+    padding: 12px;
     text-align: left;
     border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+}
+
+th:last-child, td:last-child {
+    border-right: none;
 }
 
 th {
@@ -478,7 +485,7 @@ thead th {
     position: sticky;
     top: 0;
     background-color: var(--table-head);
-    z-index: 10;
+    z-index: 100;
 }
 
 table thead {
@@ -705,16 +712,6 @@ footer a {
 
 footer a:hover {
     color: var(--link-hover);
-}
-
-.reference-section {
-    margin: 40px 0;
-}
-
-.reference-section h2 {
-    border-bottom: 2px solid var(--accent);
-    padding-bottom: 10px;
-    margin-bottom: 25px;
 }
 
 .reference-card {
