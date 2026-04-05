@@ -46,15 +46,15 @@
             <div class="race-info">
                 <div class="info-box">
                     <p>Track: Atlanta Motor Speedway, Atlanta, GA</p>
-                    <p>Distance: 163 laps on a 2.0 mile paved track (250 miles)</p>
+                    <p>Distance: 163 laps on a ? mile paved track (? miles)</p>
                     <p>Cautions: 2</p>
-                    <p>Lead Changes: 13</p>
+                    <p>Lead Changes: 3</p>
                 </div>
             </div>
 
             <div>
-                <a href="dalion500.html">Previous Race Results</a>
-                <a href="luckycharms400.html">Next Race Results</a>
+                <a href="hersheys400.html">Previous Race Results</a>
+                <a href="dollartree500.html">Next Race Results</a>
             </div>
 
             <section class="race-section">
@@ -78,27 +78,27 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>3</td>
-                                <td>15</td>
-                                <td>Sam McDaniel</td>
-                                <td><b>US Army</b> (Rick Ware Racing)</td>
-                                <td>Ford</td>
-                                <td>125</td>
+                                <td>14</td>
+                                <td>44</td>
+                                <td>Brooklyn Loveless</td>
+                                <td><b>Honda</b></td>
+                                <td>Honda</td>
+                                <td>163</td>
                                 <td>Running</td>
-                                <td>23</td>
-                                <td>64</td>
+                                <td>62</td>
+                                <td>65</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>4</td>
+                                <td>6</td>
                                 <td>6</td>
                                 <td>MJ Nelson</td>
                                 <td><b>Dr Pepper</b> (Team Penske)</td>
                                 <td>Ford</td>
-                                <td>?</td>
+                                <td>163</td>
                                 <td>Running</td>
-                                <td>88</td>
-                                <td>?</td>
+                                <td>0</td>
+                                <td>53</td>
                             </tr>
                             <tr>
                                 <td>3</td>
