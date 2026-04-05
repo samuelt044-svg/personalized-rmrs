@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="racing-reference.css">
-    <title>Hershey's 400 | NASCAR Rocky Mountain Regional Series</title>
+    <title>Lucky Charms 400 | NASCAR Rocky Mountain Regional Series</title>
     <link rel="icon" href="../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -20,8 +20,7 @@
     <nav>
         <a href="../index.html" class="nav-logo"><img src="../logo.png" alt="RMRS Logo"></a>
         <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
+            <ul class="nav-links">
                 <li><a href="../schedule.html">Schedule</a></li>
                 <li><a href="../garage.html">Drivers</a></li>
                 <li><a href="../news.html">News</a></li>
@@ -41,13 +40,13 @@
 
     <main>
         <div class="container">
-            <h1>Hershey's 400</h1>
-            <p>NASCAR Rocky Mountain Series race number 2 of 30</p>
+            <h1>Lucky Charms 400</h1>
+            <p>NASCAR Rocky Mountain Series race number 3 of 30</p>
 
             <div class="race-info">
                 <div class="info-box">
-                    <p>Track: Auto Club Speedway, Fontana, CA</p>
-                    <p>Distance: 125 laps on a 2.0 mile paved track (250 miles)</p>
+                    <p>Track: Atlanta Motor Speedway, Atlanta, GA</p>
+                    <p>Distance: 163 laps on a 2.0 mile paved track (250 miles)</p>
                     <p>Cautions: 2</p>
                     <p>Lead Changes: 13</p>
                 </div>
