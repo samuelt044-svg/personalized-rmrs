@@ -1,0 +1,354 @@
+/* Theme variables (dark default) */
+:root {
+    --bg: #1a1a1a;
+    --text: #f4f4f4;
+    --nav-bg: #000;
+    --nav-text: #ffffff;
+    --nav-border: #e16100;
+    --accent: #e18700;
+    --muted: #aaa;
+    --card-bg: #222;
+    --border: #333;
+    --overlay-bg: rgba(225, 90, 0, 0.9);
+    --stat-bg: rgba(255, 255, 255, 0.1);
+    --table-bg: #f89b50;
+    --table-alt: #f6c981;
+    --table-head: #333;
+    --btn-bg: #e18700;
+    --footer-bg: #3b7fbe;
+    --backtotop-bg: #ffae00;
+    --link-hover: #ffa500;
+    --navbar-height: 70px;
+}
+
+/* Light mode variables */
+.light-mode {
+    --bg: #ffffff;
+    --text: #111111;
+    --nav-bg: #060606;
+    --nav-text: #ffffff;
+    --nav-border: #e18700;
+    --accent: #e18700;
+    --muted: #555;
+    --card-bg: #ffffff;
+    --border: #ddd;
+    --overlay-bg: rgba(225, 90, 0, 0.9);
+    --stat-bg: rgba(0, 0, 0, 0.06);
+    --table-bg: #ffffff;
+    --table-alt: #faf0e6;
+    --table-head: #a8a8a8;
+    --btn-bg: #d25e00;
+    --footer-bg: #ffa600;
+    --backtotop-bg: #ff8800;
+    --link-hover: #e16900;
+}
+
+body {
+    font-family: Stainless-Regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+}
+
+/* smooth transitions for theme changes */
+:root, .light-mode {
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+}
+
+/* apply transitions more widely to key components */
+body, nav, footer, .featured-driver, .driver-card, .stats-overlay, table, .btn-primary {
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Theme toggle (icon) styling for footer */
+#themeToggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px 0 0 10px;
+}
+#themeToggle i { pointer-events: none; }
+#themeToggle:hover { transform: scale(1.05); }
+
+main {
+    padding: 20px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 5px;
+        font-size: 0.8rem; /* Smaller links so they stay on one line */
+    }
+}
+
+nav {
+    background: var(--nav-bg);
+    padding: 0;
+    border-bottom: 3px solid var(--nav-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--nav-text);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(225, 135, 0, 0.1);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active {
+    background: var(--accent);
+    color: #000;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+#navSearch {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--nav-border);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--nav-text);
+    font-size: 0.9rem;
+    width: 200px;
+    transition: all 0.3s;
+}
+
+#navSearch::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#navSearch:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    width: 250px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--nav-text);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--nav-bg);
+        border-bottom: 3px solid var(--nav-border);
+        gap: 0;
+        padding: 1rem;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-radius: 0;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #navSearch {
+        width: 100%;
+    }
+
+    #navSearch:focus {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .nav-logo {
+        margin-right: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--backtotop-bg); /* NASCAR Red */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%; /* Makes it a circle */
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#backToTop:hover {
+  background-color: #4e97ff;
+  transform: scale(1.1);
+}
+
+footer {
+    background: var(--footer-bg);
+    color: var(--text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+footer a {
+    color: var(--text);
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: var(--link-hover);
+}
+
+a {
+    color: var(--text);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent);
+}
