@@ -911,3 +911,265 @@ a:hover {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+form .container {
+    padding: 20px;
+    background-color: var(--card-bg);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background-color: var(--bg);
+    color: var(--text);
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 5px var(--accent);
+}
+label {
+    color: var(--text);
+    display: block;
+    margin-top: 12px;
+}
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+.btn-primary,
+.btn-secondary {
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btn-primary {
+    background-color: var(--btn-bg);
+    color: white;
+    width: 100%;
+    margin-top: 16px;
+}
+.btn-primary:hover {
+    background-color: var(--link-hover);
+}
+.btn-secondary {
+    background-color: var(--border);
+    color: var(--text);
+}
+.btn-secondary:hover {
+    background-color: var(--accent);
+    color: white;
+}
+.psw {
+    color: var(--muted);
+    font-size: 12px;
+}
+.psw a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.psw a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+h2 {
+    color: var(--text);
+}
+.nav-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--nav-text);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 15px;
+}
+.nav-profile:hover {
+    background-color: var(--accent);
+    transform: scale(1.1);
+}
+.nav-profile i {
+    font-size: 24px;
+}
+
+/* Fantasy page styles */
+.fantasy-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.fantasy-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.selection-area {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.selected-drivers, .reserve-driver {
+    margin-bottom: 20px;
+}
+
+.driver-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected-driver {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+.driver-pool {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#driverSearch {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.driver-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.fantasy-driver {
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--bg);
+    text-align: center;
+}
+
+.fantasy-driver h4 {
+    margin: 0 0 5px 0;
+    color: var(--accent);
+}
+
+.fantasy-driver p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.fantasy-driver button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.select-main-btn {
+    background-color: var(--btn-bg);
+    color: white;
+}
+
+.select-main-btn:hover {
+    background-color: var(--link-hover);
+}
+
+.select-reserve-btn {
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.select-reserve-btn:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.fantasy-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fantasy-actions button {
+    margin: 0 10px;
+}

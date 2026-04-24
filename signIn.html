@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News / FAQ | NASCAR Rocky Mountain Regional Series</title>
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="nascar.css">
+    <title>Sign In | NASCAR Rocky Mountain Regional Series</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div id="pitStopModal">
-        <div class="modal-box">
-            <h2>Cookies?</h2>
-            <p>Do you agree to our data tracking (cookies)?</p>
-            <button class="btn accept" onclick="closeModal()">Yes</button>
-            <button class="btn reject" onclick="closeModal()">No</button>
-        </div>
-    </div>
 
     <nav>
         <a href="index.html" class="nav-logo"><img src="logo.png" alt="RMRS Logo"></a>
@@ -24,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="garage.html">Drivers</a></li>
-                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="racing-reference.html">Racing Reference</a></li>
                 <li><a href="paint-schemes.html">Paint Schemes</a></li>
                 <li><a href="fantasy.html">Fantasy</a></li>
@@ -43,37 +34,34 @@
             <span></span>
         </div>
     </nav>
+
     <main>
-
-    <h1>Latest News</h1>
-    <div class="news">
-        <a href="#">
-            <img src="Images/mcdaniel.jpg" alt="newsThumb">
-            <h3>Hendrick Motorsports steals top Rick Ware Racing driver to driver #48 car full-time</h3>
-        </a>
-    </div>
-
-    <div class="news">
-        <a href="#">
-            <img src="Images/DavCarter.png" alt="newsThumb">
-            <h3>New driver will debut in his first NASCAR Rocky Mountain Regional Series race at Daytona Beach in Hendrick Motorsports' #24 developmental car.</h3>
-        </a>
-    </div>
-
-<!--Daytona Beach Cancellation-->
-<div class="news">
-        <a href="#">
-            <img src="Images/daytonaBeach.png" alt="newsThumb">
-            <h3>The Chase Race at Daytona Beach will be cancelled and instead this weekend's will run at Daytona International Speedway, the 3rd event at the venue this year.</h3>
-        </a>
-    </div>
-
-    
+<form id="signInForm" onsubmit="handleSignIn(event)">
+   <div class="container">
+       <h2 style="text-align:center"><b>Sign In</b></h2>
+       <div id="errorMessage" class="error-message" style="display: none; padding: 10px; margin-bottom: 15px; border-radius: 4px; background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;"></div>
+       <label for="uname"><b>Username</b></label>
+       <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+       <label for="psw"><b>Password</b></label>
+       <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+       <button type="submit" class="btn-primary">Login</button>
+       <label>
+           <input type="checkbox" id="remember" checked="checked" name="remember"> Remember me
+       </label>
+   </div>
+   <div class="container" style="background-color: var(--card-bg); border: 1px solid var(--border);">
+       <button type="button" class="btn-secondary" onclick="window.history.back()">Back</button>
+       <span class="psw"><a href="#">Forgot password?</a></span>
+   </div>
+   <div class="container" style="background-color: var(--card-bg); border: 1px solid var(--border);">
+       <span class="psw">Don't have an account? <a href="makeAccount.html">Create one</a></span>
+   </div>
+</form>
 
 
-    <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
     </main>
-    
+
     <footer>
         <div class="social">
             <a href="https://www.instagram.com/rockymountainseries" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -89,6 +77,6 @@
     </footer>
 
     <script src="nascar.js"></script>
+    <script src="account.js"></script>
 </body>
-
 </html>
