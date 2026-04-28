@@ -906,10 +906,10 @@ a:hover {
 }
 
 .video-caption {
-  color: var(--muted);
-  margin-top: 10px;
-  font-size: 0.95rem;
-  line-height: 1.4;
+    color: var(--muted);
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 /* Form styling */

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // --- 1. PIT STOP MODAL ---
+    //Cookies
     const modal = document.getElementById("pitStopModal");
     if (modal) {
         if (localStorage.getItem('pitStopCleared') === 'true') {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-    // --- 2. LIGHTBOX ---
+    //Lightbox
     const lb = document.getElementById("lightbox");
     const lbImg = document.getElementById("lightboxImg");
     const galleryImages = document.querySelectorAll(".driver-card img, .gallery img");
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         lb.onclick = () => lb.style.display = "none";
     }
 
-    // --- 3. DYNAMIC DATA (SCHEDULE & STANDINGS) ---
+    //Schedule and standings data
     const standingsDiv = document.getElementById("standings-output");
     const schedDiv = document.getElementById("schedule-list");
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(res => res.json())
             .then(data => {
                 
-                // A. BUILD STANDINGS TABLE
+                //Standings table
                 if (standingsDiv && data.standings) {
                     let sHtml = `<table>
                         <thead>
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     data.standings.forEach(driver => {
                         const rowClass = driver.pos === 16 ? "cutoff-row" : "";
-                        // Add trophy to winners
+                        //trophy icon for winners
                         const nameDisplay = driver.wins > 0 ? `🏆 ${driver.name}` : driver.name;
 
                         sHtml += `<tr class="${rowClass}">
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     standingsDiv.innerHTML = sHtml;
                 }
 
-                // B. BUILD SCHEDULE TABLE
+                //schedule table
                 if (schedDiv && data.schedule) {
                     let schHtml = "<table class='schedule-table'><thead><tr><th>Race</th><th>Track</th><th>Date</th><th>Winner</th></tr></thead><tbody>";
                     data.schedule.forEach(item => {
@@ -85,8 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 
-    // --- THEME TOGGLE ---
-    // Create or reuse toggle button (with icon) and append to footer if present
+    //Theme toggle
+    //Create or reuse toggle button (with icon) and append to footer if present
     function createThemeToggle() {
         if (document.getElementById('themeToggle')) return;
         const btn = document.createElement('button');
@@ -98,12 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const footer = document.querySelector('footer');
         if (footer) {
-            // insert before social icons div if present
+            //insert before social icons div if present
             const social = footer.querySelector('.social');
             if (social) footer.insertBefore(btn, social);
             else footer.appendChild(btn);
         } else {
-            // fallback: append to nav
+            //fallback: append to nav
             const nav = document.querySelector('nav');
             if (nav) nav.appendChild(btn);
         }
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     createThemeToggle();
 
-    // Initialize theme from localStorage
+    //Initialize theme from localStorage
     const userTheme = localStorage.getItem('theme');
     const root = document.documentElement;
     if (userTheme === 'light') {
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// --- 4. SEARCH & BACK TO TOP ---
+//Search and back to top
 function filterDrivers() {
     const filter = document.getElementById('driverSearch').value.toLowerCase();
     document.querySelectorAll('.driver-card').forEach(card => {

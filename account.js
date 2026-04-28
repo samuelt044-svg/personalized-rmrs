@@ -43,15 +43,15 @@ function isValidEmail(email) {
 // Validate password strength (at least 6 characters, 1 uppercase, 1 number)
 function isValidPassword(password) {
     return password.length >= 6 && 
-           /[A-Z]/.test(password) && 
-           /\d/.test(password);
+            /[A-Z]/.test(password) && 
+            /\d/.test(password);
 }
 
 // Validate username (alphanumeric, 3-20 characters, no spaces)
 function isValidUsername(username) {
     return username.length >= 3 && 
-           username.length <= 20 && 
-           /^[a-zA-Z0-9_]+$/.test(username);
+            username.length <= 20 && 
+            /^[a-zA-Z0-9_]+$/.test(username);
 }
 
 // Check if username already exists
